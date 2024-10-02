@@ -3,6 +3,27 @@
   src: url(font/IosevkaNerdFont-Regular.ttf);
 }
 
-h1 {
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body {
   font-family: Iosevka Regular;
+  background: #111111;
+  color: #dddddd;
+}
+
+header {
+  margin: 5px;
+  border: 2px;
+  padding: 10px;
+  border-color: #dddddd;
+  border-style: solid;
+  text-align: center;
+}
+
+main {
+  position: absolute;
 }
