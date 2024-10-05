@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Iosevka Regular";
-  src: url(font/IosevkaNerdFont-Regular.ttf);
+  src: url(/css/font/IosevkaNerdFont-Regular.ttf);
 }
 
 * {
@@ -13,6 +13,7 @@ body {
   font-family: Iosevka Regular;
   background: #111111;
   color: #dddddd;
+  font-size: 24px;
 }
 
 header {
@@ -46,6 +47,15 @@ main {
   padding: 10px;
   border-color: #dddddd;
   border-style: solid;
+  position: relative;
+  min-height: 100px;
+}
+
+@media (min-width: 1000px) {
+  main {
+    width: 1000px;
+    left: calc(50% - 500px);
+  }
 }
 
 footer {
@@ -57,3 +67,11 @@ footer {
   text-align: center;
 }
 
+img {
+  max-width: 500px;
+}
+
+li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
